@@ -17,3 +17,14 @@ group :assets do
 end
 
 gem 'jquery-rails', '2.0.2'
+
+
+#--------------------------------------------------
+# $ bundle install --without production
+#   The --without production  option prevents the
+#   local installation of any production gems  
+#   (in this case, just pg)
+group :production do
+  gem 'pg', '0.12.2'
+end
+#--------------------------------------------------
